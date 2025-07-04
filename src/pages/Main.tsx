@@ -2,49 +2,45 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import About from "@/components/About";
-import Menu from "@/components/Menu";
-// import Contact from "@/components/Contact";
+import { slides } from "@/constants/constants";
 
 export default function Main() {
-  const slides = [
-    {
-      key: "hero",
-      content: () => <h1 className="text-6xl font-bold neon">Saće · Dorćol</h1>,
-    },
-    { key: "about", content: About },
-    { key: "menu", content: Menu },
-
-    // { key: "contact", content: Contact },
-  ];
-
   const [idx, setIdx] = useState(0);
-  const next = () => setIdx((prev) => (prev + 1) % slides.length);
+  const prev = () => setIdx((i) => (i - 1 + slides.length) % slides.length);
+  const next = () => setIdx((i) => (i + 1) % slides.length);
 
   const { key, content: Content } = slides[idx];
 
   return (
-    <motion.section
-      onClick={next}
-      className="relative h-screen flex items-center justify-center cursor-pointer"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
-    >
-      <div className="absolute inset-0 bg-[#E6DDCE]/60" />
+    <div className="flex justify-between">
+      <button onClick={prev} className="cursor-pointer p-4 font-bold text-2xl">
+        {"<"}
+      </button>
+      <motion.section
+        className="h-screen flex items-center justify-center flex-1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="inset-0 bg-[#E6DDCE]/60" />
 
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={key}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{ duration: 0.5 }}
-          className="relative text-center"
-        >
-          <Content />
-        </motion.div>
-      </AnimatePresence>
-    </motion.section>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={key}
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: -20, opacity: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-center cursor-pointer"
+            onClick={next}
+          >
+            <Content />
+          </motion.div>
+        </AnimatePresence>
+      </motion.section>
+      <button onClick={next} className="cursor-pointer p-4 font-bold text-2xl">
+        {">"}
+      </button>
+    </div>
   );
 }
