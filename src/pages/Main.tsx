@@ -12,7 +12,7 @@ export default function Main() {
   const { key, content: Content } = slides[idx];
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between items-center">
       <button onClick={prev} className="cursor-pointer p-4 font-bold text-2xl">
         {"<"}
       </button>

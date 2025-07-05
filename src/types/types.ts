@@ -1,1 +1,5 @@
-export type MenuItem = { name: string; price: string; description: string };
+export interface Cocktail {
+  src: string;
+  title: string;
+  description: string;
+}
