@@ -1,9 +1,9 @@
-import CocktailGrid from "@/components/CoctailGrid";
+import DrinkGrid from "@/components/DrinkGrid";
 
 export default function TestingPage() {
   return (
     <div>
-      <CocktailGrid />
+      <DrinkGrid />
     </div>
   );
 }

@@ -3,24 +3,19 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import type { Cocktail, Drink } from "@/types/types";
 
-interface Cocktail {
-  src: string;
-  title: string;
-  description: string;
-}
+export type ModalItem = Cocktail | Drink;
 
 interface Props {
-  cocktail: Cocktail;
+  item: ModalItem;
   onClose: () => void;
 }
 
-export default function CocktailModal({ cocktail, onClose }: Props) {
+export default function Modal({ item, onClose }: Props) {
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        onClose();
-      }
+      if (e.key === "Escape") onClose();
     };
     document.addEventListener("keydown", handleKeyDown);
     return () => document.removeEventListener("keydown", handleKeyDown);
@@ -39,16 +34,16 @@ export default function CocktailModal({ cocktail, onClose }: Props) {
       >
         <div className="relative w-full h-64">
           <Image
-            src={cocktail.src}
-            alt={cocktail.title}
+            src={item.src}
+            alt={item.title}
             fill
             className="object-cover"
           />
         </div>
 
         <div className="p-6">
-          <h3 className="text-2xl neon font-bold mb-2">{cocktail.title}</h3>
-          <p className="text-base leading-relaxed">{cocktail.description}</p>
+          <h3 className="text-2xl neon font-bold mb-2">{item.title}</h3>
+          <p className="text-base leading-relaxed">{item.description}</p>
         </div>
       </motion.div>
     </div>
