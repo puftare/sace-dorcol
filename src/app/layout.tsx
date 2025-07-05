@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import { navItems } from "@/constants/constants";
 
 export const metadata: Metadata = {
   title: "Saće · Dorćol",
@@ -15,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        <Header items={navItems} />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

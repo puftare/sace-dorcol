@@ -1,28 +1,48 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { slides } from "@/constants/constants";
 
 export default function Main() {
   const [idx, setIdx] = useState(0);
-  const prev = () => setIdx((i) => (i - 1 + slides.length) % slides.length);
-  const next = () => setIdx((i) => (i + 1) % slides.length);
+  const slideCount = slides.length;
+
+  const prev = useCallback(() => {
+    setIdx((prevIdx) => (prevIdx - 1 + slides.length) % slides.length);
+  }, []);
+
+  const next = useCallback(() => {
+    setIdx((prevIdx) => (prevIdx + 1) % slides.length);
+  }, []);
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIdx((i) => (i + 1) % slideCount);
+    }, 5000);
+    return () => clearInterval(id);
+  }, [slideCount]);
+
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "ArrowLeft") prev();
+      if (e.key === "ArrowRight") next();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [prev, next]);
 
   const { key, content: Content } = slides[idx];
 
   return (
-    <div className="flex justify-between items-center">
-      <button onClick={prev} className="cursor-pointer p-4 font-bold text-2xl">
-        {"<"}
-      </button>
+    <div className="flex justify-between items-center h-screen">
       <motion.section
-        className="h-screen flex items-center justify-center flex-1"
+        className="flex-1 flex items-center justify-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="inset-0 bg-[#E6DDCE]/60" />
+        <div className="bg-[#E6DDCE]/60 pointer-events-none" />
 
         <AnimatePresence mode="wait">
           <motion.div
@@ -31,16 +51,12 @@ export default function Main() {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: -20, opacity: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-center cursor-pointer"
-            onClick={next}
+            className="relative text-center px-4"
           >
             <Content />
           </motion.div>
         </AnimatePresence>
       </motion.section>
-      <button onClick={next} className="cursor-pointer p-4 font-bold text-2xl">
-        {">"}
-      </button>
     </div>
   );
 }

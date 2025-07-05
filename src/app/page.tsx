@@ -1,6 +1,5 @@
 import Main from "@/pages/Main";
 import Head from "next/head";
-import Footer from "@/components/Footer";
 
 export default function Page() {
   return (
@@ -13,7 +12,6 @@ export default function Page() {
         />
       </Head>
       <Main />
-      <Footer />
     </>
   );
 }

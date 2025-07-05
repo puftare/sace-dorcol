@@ -1,70 +1,78 @@
 import About from "@/components/About";
-// import Menu from "@/components/Menu";
 // import Contact from "@/components/Contact";
 import Hero from "@/components/Hero";
-import { Cocktail } from "@/types/types";
+import { Cocktail, NavItem } from "@/types/types";
 
 export const cocktails: Cocktail[] = [
   {
     src: "/images/mojito.jpg",
-    title: "Mojito",
-    description: "Refreshing mix of white rum, lime, mint & soda.",
+    title: "SVINJAK",
+    description: "BRANDY, LEMON AND NETTLE SYRUP",
   },
   {
     src: "/images/martini.jpg",
-    title: "Classic Martini",
-    description: "Gin and dry vermouth stirred to silky perfection.",
+    title: "QUINCE SOUR",
+    description: "QUINCE BRANDY, LEMON AND MINT SYRUP",
   },
   {
     src: "/images/old-fashioned.jpg",
-    title: "Old Fashioned",
-    description: "Bourbon with sugar, bitters, and a twist of orange.",
+    title: "OZMO",
+    description: "VODKA, LEMON AND ORANGE SOUR CHERRY SYRUP",
   },
   {
     src: "/images/margarita.jpg",
-    title: "Margarita",
-    description: "Tequila, lime juice, and triple sec served on the rocks.",
+    title: "TRISHA",
+    description: "GIN, LEMON AND CHERRY SYRUP",
   },
   {
     src: "/images/negroni.jpg",
-    title: "Negroni",
-    description: "Equal parts gin, Campari, and sweet vermouth.",
+    title: "GG",
+    description: "GIN, GRAPE, LEMON AND ELDERFLOWER SYRUP",
   },
   {
     src: "/images/pina-colada.jpg",
-    title: "Piña Colada",
-    description: "Creamy coconut, pineapple, and rum blended over ice.",
+    title: "GIN BASIL",
+    description: "BASIN, GIN, LEMON AND SYRUP",
   },
   {
     src: "/images/daiquiri.jpg",
-    title: "Daiquiri",
-    description: "Rum, fresh lime, and sugar shaken until icy cold.",
+    title: "MOJITO",
+    description: "RUM, MINT, LIME, SYRUP AND SODA",
   },
   {
     src: "/images/cosmopolitan.jpg",
-    title: "Cosmopolitan",
-    description:
-      "Vodka, cranberry, Cointreau, and lime juice in a chilled glass.",
+    title: "SIESTA",
+    description: "TEQUILLA, CAMPARI, GRAPEFRUIT, LIME AND SYRUP",
   },
   {
     src: "/images/manhattan.jpg",
-    title: "Manhattan",
-    description: "Rye whiskey, sweet vermouth, and a few dashes of bitters.",
+    title: "NEGRONI",
+    description: "GIN, CAMPARI AND VERMOUTH",
   },
   {
     src: "/images/whiskey-sour.jpg",
-    title: "Whiskey Sour",
-    description: "Whiskey, lemon juice, sugar, and egg white foam.",
+    title: "DAIQUIRI",
+    description: "RUM, LIME AND SYRUP",
   },
   {
     src: "/images/bloody-mary.jpg",
-    title: "Bloody Mary",
+    title: "WHISKEY SOUR",
     description: "Vodka, tomato juice, and a spiced savory blend.",
   },
   {
     src: "/images/mai-tai.jpg",
-    title: "Mai Tai",
-    description: "Rum, lime juice, orgeat syrup, and orange curaçao.",
+    title: "GIN FIZZ",
+    description: "GIN, LEMON AND SODA",
+  },
+  {
+    src: "/images/mai-tai.jpg",
+    title: "SKINNY BITCH",
+    description: "VODKA, LEMON AND SODA",
+  },
+  {
+    src: "/images/mai-tai.jpg",
+    title: "GIN & TONIC",
+    description: "GIN AND TONIC",
   },
 ];
 
@@ -74,6 +82,11 @@ export const slides = [
     content: Hero,
   },
   { key: "about", content: About },
-  // { key: "menu", content: Menu },
   // { key: "contact", content: Contact },
+];
+
+export const navItems: NavItem[] = [
+  { label: "Home", href: "/" },
+  { label: "Cocktails", href: "/coctails" },
+  { label: "Drinks", href: "/drinks" },
 ];
