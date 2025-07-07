@@ -13,4 +13,5 @@ export interface Drink {
 export interface NavItem {
   label: string;
   href: string;
+  translationKey: string;
 }

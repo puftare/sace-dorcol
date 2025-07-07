@@ -2,18 +2,20 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { cocktails } from "@/constants/constants";
+import { coctails } from "@/constants/constants";
 import Modal from "./Modal";
+import { useTranslations } from "next-intl";
 
 export default function CocktailGrid() {
-  const [selected, setSelected] = useState<(typeof cocktails)[0] | null>(null);
+  const [selected, setSelected] = useState<(typeof coctails)[0] | null>(null);
+  const t = useTranslations("coctails");
 
   return (
     <section className="px-4 py-12 max-w-7xl mx-auto">
-      <h2 className="text-3xl text-center mb-8 font-bold">Our Cocktails</h2>
+      <h2 className="text-3xl text-center mb-8 font-bold">{t("title")}</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
-        {cocktails.map((c) => (
+        {coctails.map((c) => (
           <div
             key={c.title}
             onClick={() => setSelected(c)}

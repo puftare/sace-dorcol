@@ -2,7 +2,7 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { Cocktail, Drink, NavItem } from "@/types/types";
 
-export const cocktails: Cocktail[] = [
+export const coctails: Cocktail[] = [
   {
     src: "/images/mojito.jpg",
     title: "SVINJAK",
@@ -77,42 +77,42 @@ export const cocktails: Cocktail[] = [
 
 export const drinks: Drink[] = [
   {
-    src: "/images/mojito.jpg",
-    title: "SVINJAK",
-    description: "BRANDY, LEMON AND NETTLE SYRUP",
+    src: "/images/valjevsko-malo.jpg",
+    title: "VALJEVSKO MALO",
+    description: "VALJEVSKO BEER 0.33L",
   },
   {
-    src: "/images/martini.jpg",
-    title: "QUINCE SOUR",
-    description: "QUINCE BRANDY, LEMON AND MINT SYRUP",
+    src: "/images/valjevsko-veliko.jpg",
+    title: "VALJEVSKO VELIKO",
+    description: "VALJEVSKO BEER 0.33L",
   },
   {
-    src: "/images/old-fashioned.jpg",
-    title: "OZMO",
-    description: "VODKA, LEMON AND ORANGE SOUR CHERRY SYRUP",
+    src: "/images/kafa.jpg",
+    title: "COFFEE",
+    description: "ESPRESSO, AMERICANO, CAPPUCCINO, LATTE",
   },
   {
-    src: "/images/margarita.jpg",
-    title: "TRISHA",
-    description: "GIN, LEMON AND CHERRY SYRUP",
+    src: "/images/macha.jpg",
+    title: "MATCHA",
+    description: "MATCHA LATTE, MATCHA TEA",
   },
   {
-    src: "/images/negroni.jpg",
+    src: "/images/kafa.jpg",
     title: "GG",
     description: "GIN, GRAPE, LEMON AND ELDERFLOWER SYRUP",
   },
   {
-    src: "/images/pina-colada.jpg",
+    src: "/images/valjevsko-veliko.jpg",
     title: "GIN BASIL",
     description: "BASIN, GIN, LEMON AND SYRUP",
   },
   {
-    src: "/images/daiquiri.jpg",
+    src: "/images/valjevsko-malo.jpg",
     title: "MOJITO",
     description: "RUM, MINT, LIME, SYRUP AND SODA",
   },
   {
-    src: "/images/cosmopolitan.jpg",
+    src: "/images/kafa.jpg",
     title: "SIESTA",
     description: "TEQUILLA, CAMPARI, GRAPEFRUIT, LIME AND SYRUP",
   },
@@ -157,7 +157,7 @@ export const slides = [
 ];
 
 export const navItems: NavItem[] = [
-  { label: "Home", href: "/" },
-  { label: "Cocktails", href: "/coctails" },
-  { label: "Drinks", href: "/drinks" },
+  { label: "Home", href: "/", translationKey: "home" },
+  { label: "Coctails", href: "/coctails", translationKey: "coctails" },
+  { label: "Drinks", href: "/drinks", translationKey: "drinks" },
 ];

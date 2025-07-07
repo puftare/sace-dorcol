@@ -1,17 +1,5 @@
-import Main from "@/pages/Main";
-import Head from "next/head";
+import { redirect } from "next/navigation";
 
-export default function Page() {
-  return (
-    <>
-      <Head>
-        <title>Saće · Dorćol</title>
-        <meta
-          name="description"
-          content="Saće Dorćol is a modern, minimalistic caffe showcasing local art, culture and drinks in the heart of Dorćol, Belgrade."
-        />
-      </Head>
-      <Main />
-    </>
-  );
+export default function RootPage() {
+  redirect("/en");
 }
