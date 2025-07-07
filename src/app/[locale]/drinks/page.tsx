@@ -1,6 +1,6 @@
 import DrinkGrid from "@/components/DrinkGrid";
 
-export default function TestingPage() {
+export default function DrinksPage() {
   return (
     <div>
       <DrinkGrid />

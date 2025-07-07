@@ -12,23 +12,26 @@ export default function LanguageSwitcher() {
     router.replace(pathname, { locale: newLocale });
   };
 
-  return (
-    <div className="flex space-x-2">
-      <button
-        onClick={() => switchLanguage("en")}
-        className="px-4 py-2 rounded-md text-lg font-semibold transition cursor-pointer"
-        lang={locale}
-      >
-        EN
-      </button>
+  const languages = [
+    { code: "en", label: "EN", fullName: "English" },
+    { code: "sr", label: "СР", fullName: "Српски" },
+    { code: "ru", label: "РУ", fullName: "Русский" },
+  ];
 
-      <button
-        onClick={() => switchLanguage("sr")}
-        className="px-4 py-2 rounded-md text-lg font-semibold transition cursor-pointer"
-        lang={locale}
-      >
-        СР
-      </button>
+  return (
+    <div className="flex space-x-1">
+      {languages.map((lang) => (
+        <button
+          key={lang.code}
+          onClick={() => switchLanguage(lang.code)}
+          className={`text-sm min-w-[40px] cursor-pointer ${
+            locale === lang.code && "text-black hover:bg-neon/80"
+          }`}
+          title={lang.fullName}
+        >
+          {lang.label}
+        </button>
+      ))}
     </div>
   );
 }

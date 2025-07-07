@@ -1,9 +1,5 @@
 import type React from "react";
 import type { Metadata } from "next";
-import "../globals.css";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import { navItems } from "@/constants/constants";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
@@ -22,9 +18,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   const titles = {
-    en: "Saće · Dorćol",
-    sr: "Саће · Дорћол",
-    ru: "Саће · Дорчол",
+    en: "Saće · Our drinks",
+    sr: "Саће · Наша пића",
+    ru: "Саће · Наши напитки",
   };
 
   const descriptions = {
@@ -50,14 +46,8 @@ export default async function RootLayout({ children, params }: Props) {
   }
 
   return (
-    <html lang={locale}>
-      <body suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages}>
-          <Header items={navItems} />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      {children}
+    </NextIntlClientProvider>
   );
 }

@@ -2,7 +2,7 @@ import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { Cocktail, Drink, NavItem } from "@/types/types";
 
-export const coctails: Cocktail[] = [
+export const cocktails: Cocktail[] = [
   {
     src: "/images/mojito.jpg",
     title: "SVINJAK",
@@ -158,6 +158,6 @@ export const slides = [
 
 export const navItems: NavItem[] = [
   { label: "Home", href: "/", translationKey: "home" },
-  { label: "Coctails", href: "/coctails", translationKey: "coctails" },
+  { label: "Cocktails", href: "/cocktails", translationKey: "cocktails" },
   { label: "Drinks", href: "/drinks", translationKey: "drinks" },
 ];

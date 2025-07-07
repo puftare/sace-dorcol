@@ -6,7 +6,7 @@
 
 ## About Us
 
-Saće · Dorćol is where minimalist design meets vibrant local culture. Nestled on Gospodar Jovanova, we serve signature coctails, craft soft drinks, and small-batch coffees in an atmosphere bathed in warm neon glow. Whether you’re here for an espresso at noon or a late-night Aperitivo, our curated menu and friendly vibe make every visit memorable.
+Saće · Dorćol is where minimalist design meets vibrant local culture. Nestled on Gospodar Jovanova, we serve signature cocktails, craft soft drinks, and small-batch coffees in an atmosphere bathed in warm neon glow. Whether you’re here for an espresso at noon or a late-night Aperitivo, our curated menu and friendly vibe make every visit memorable.
 
 ---
 
@@ -16,7 +16,7 @@ Gospodar Jovanova 69, Dorćol, Belgrade
 
 ---
 
-## Signature Coctails
+## Signature Cocktails
 
 1. **SVINJAK** — Brandy, lemon & nettle syrup
 2. **QUINCE SOUR** — Quince brandy, lemon & mint syrup

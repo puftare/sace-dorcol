@@ -1,17 +1,17 @@
 {
   "header": {
     "home": "Home",
-    "coctails": "Coctails",
+    "cocktails": "Cocktails",
     "drinks": "Drinks"
   },
   "hero": {
     "title": "Saće · Dorćol"
   },
   "about": {
-    "copy": "Located in Dorćol, Saće is where neon glow meets curated coctails and local vibes. Join us for signature drinks, eclectic music, and late-night laughter."
+    "copy": "Located in Dorćol, Saće is where neon glow meets curated cocktails and local vibes. Join us for signature drinks, eclectic music, and late-night laughter."
   },
-  "coctails": {
-    "title": "Our Coctails"
+  "cocktails": {
+    "title": "Our Cocktails"
   },
   "drinks": {
     "title": "Our Drinks"
