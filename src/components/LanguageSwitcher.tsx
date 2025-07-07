@@ -16,6 +16,7 @@ export default function LanguageSwitcher() {
     { code: "en", label: "EN", fullName: "English" },
     { code: "sr", label: "СР", fullName: "Српски" },
     { code: "ru", label: "РУ", fullName: "Русский" },
+    { code: "it", label: "IT", fullName: "Italiano" },
   ];
 
   return (

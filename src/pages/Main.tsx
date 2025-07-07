@@ -2,7 +2,10 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { slides } from "@/constants/constants";
+import {
+  MAIN_PAGE_ANIMATION_CHANGE_DELAY,
+  slides,
+} from "@/constants/constants";
 
 export default function Main() {
   const [idx, setIdx] = useState(0);
@@ -19,7 +22,7 @@ export default function Main() {
   useEffect(() => {
     const id = setInterval(() => {
       setIdx((i) => (i + 1) % slideCount);
-    }, 5000);
+    }, MAIN_PAGE_ANIMATION_CHANGE_DELAY);
     return () => clearInterval(id);
   }, [slideCount]);
 

@@ -21,12 +21,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     en: "Saće · Our drinks",
     sr: "Саће · Наша пића",
     ru: "Саће · Наши напитки",
+    it: "Saće · Le nostre bevande",
   };
 
   const descriptions = {
     en: "Sace Dorćol is a modern, minimalistic caffe showcasing local art, culture and drinks in the heart of Dorćol, Belgrade.",
     sr: "Саће Дорћол је модеран, минималистички кафе који приказује локалну уметност, културу и пића у срцу Дорћола, Београд.",
     ru: "Саће Дорчол - это современное, минималистичное кафе, демонстрирующее местное искусство, культуру и напитки в сердце Дорчола, Белград.",
+    it: "Saće Dorćol è un locale moderno e minimalista nel cuore di Dorćol, Belgrado, che unisce arte locale, cultura e cocktail selezionati per un’esperienza unica.",
   };
 
   return {

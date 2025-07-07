@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Logo from "@/components/Logo";
 import { Cocktail, Drink, NavItem } from "@/types/types";
 
 export const cocktails: Cocktail[] = [
@@ -154,6 +155,7 @@ export const slides = [
     content: Hero,
   },
   { key: "about", content: About },
+  { key: "logo", content: Logo },
 ];
 
 export const navItems: NavItem[] = [
@@ -161,3 +163,5 @@ export const navItems: NavItem[] = [
   { label: "Cocktails", href: "/cocktails", translationKey: "cocktails" },
   { label: "Drinks", href: "/drinks", translationKey: "drinks" },
 ];
+
+export const MAIN_PAGE_ANIMATION_CHANGE_DELAY = 5000; // 5 seconds

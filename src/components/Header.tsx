@@ -27,11 +27,7 @@ export default function Header({ items }: HeaderProps) {
                 className={`
                   px-4 py-2 rounded-md
                   text-lg font-semibold transition
-                  ${
-                    isActive
-                      ? "text-neon border-b-2 border-neon"
-                      : "text-offWhite hover:text-neon hover:border-b-2 hover:border-neon"
-                  }
+                  ${isActive && "border-b-2 border-neon"}
                 `}
               >
                 {t(item.translationKey)}

@@ -1,0 +1,22 @@
+{
+  "header": {
+    "home": "Home",
+    "cocktails": "Cocktail",
+    "drinks": "Bevande"
+  },
+  "hero": {
+    "title": "Saće · Dorćol"
+  },
+  "about": {
+    "copy": "Situato a Dorćol, Saće è il luogo dove il bagliore al neon incontra cocktail selezionati e atmosfere locali. Unisciti a noi per drink d’autore, musica e risate fino a tarda notte."
+  },
+  "cocktails": {
+    "title": "I nostri cocktail"
+  },
+  "drinks": {
+    "title": "Le nostre bevande"
+  },
+  "footer": {
+    "copy": "© 2025 Saće · Dorćol. Tutti i diritti riservati."
+  }
+}
