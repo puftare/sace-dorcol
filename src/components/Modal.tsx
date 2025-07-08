@@ -3,9 +3,7 @@
 import { useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import type { Cocktail, Drink } from "@/types/types";
-
-export type ModalItem = Cocktail | Drink;
+import type { ModalItem } from "@/types/types";
 
 interface Props {
   item: ModalItem;
@@ -13,12 +11,13 @@ interface Props {
 }
 
 export default function Modal({ item, onClose }: Props) {
+  // Escape closes
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
+    const handler = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
     };
-    document.addEventListener("keydown", handleKeyDown);
-    return () => document.removeEventListener("keydown", handleKeyDown);
+    document.addEventListener("keydown", handler);
+    return () => document.removeEventListener("keydown", handler);
   }, [onClose]);
 
   return (

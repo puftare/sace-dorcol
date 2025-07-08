@@ -8,13 +8,125 @@
     "title": "Saće · Dorćol"
   },
   "about": {
-    "copy": "Situato a Dorćol, Saće è il luogo dove il bagliore al neon incontra cocktail selezionati e atmosfere locali. Unisciti a noi per drink d’autore, musica e risate fino a tarda notte."
+    "copy": "Situato a Dorćol, Saće è il luogo dove il bagliore al neon incontra cocktail selezionati e vibrazioni locali. Unisciti a noi per drink d'autore, musica e risate fino a tarda notte."
   },
   "cocktails": {
-    "title": "I nostri cocktail"
+    "title": "I nostri cocktail",
+    "svinjak": {
+      "title": "Svinjak",
+      "description": "Brandy, limone e sciroppo di ortica"
+    },
+    "quinceSour": {
+      "title": "Quince Sour",
+      "description": "Brandy di mele cotogne, limone e sciroppo alla menta"
+    },
+    "ozmo": {
+      "title": "Ozmo",
+      "description": "Vodka, limone e sciroppo di ciliegia acida"
+    },
+    "trisha": {
+      "title": "Trisha",
+      "description": "Gin, limone e sciroppo di ciliegia"
+    },
+    "gg": {
+      "title": "GG",
+      "description": "Gin, uva, limone e sciroppo di sambuco"
+    },
+    "ginBasil": {
+      "title": "Gin Basil",
+      "description": "Basilico, gin, limone e sciroppo"
+    },
+    "mojito": {
+      "title": "Mojito",
+      "description": "Rum, menta, lime, sciroppo e soda"
+    },
+    "siesta": {
+      "title": "Siesta",
+      "description": "Tequila, Campari, pompelmo, lime e sciroppo"
+    },
+    "negroniClassic": {
+      "title": "Negroni",
+      "description": "Gin, Campari e vermouth"
+    },
+    "daiquiriClassic": {
+      "title": "Daiquiri",
+      "description": "Rum, lime e sciroppo"
+    },
+    "bloodyMary": {
+      "title": "Bloody Mary",
+      "description": "Vodka, succo di pomodoro e spezie"
+    },
+    "maiTai": {
+      "title": "Gin Fizz",
+      "description": "Gin, limone e soda"
+    },
+    "skinnyBitch": {
+      "title": "Skinny Bitch",
+      "description": "Vodka, limone e soda"
+    },
+    "ginAndTonic": {
+      "title": "Gin & Tonic",
+      "description": "Gin e tonica"
+    }
   },
   "drinks": {
-    "title": "Le nostre bevande"
+    "title": "Le nostre bevande",
+    "valjevskoMalo": {
+      "title": "Valjevsko Piccolo",
+      "description": "Birra Valjevsko 0,33 L"
+    },
+    "valjevskoVeliko": {
+      "title": "Valjevsko Grande",
+      "description": "Birra Valjevsko 0,5 L"
+    },
+    "coffee": {
+      "title": "Caffè",
+      "description": "Espresso, Americano, Cappuccino, Latte"
+    },
+    "matcha": {
+      "title": "Matcha",
+      "description": "Matcha latte, tè matcha"
+    },
+    "gg": {
+      "title": "GG",
+      "description": "Gin, uva, limone e sciroppo di sambuco"
+    },
+    "ginBasil": {
+      "title": "Gin Basil",
+      "description": "Basilico, gin, limone e sciroppo"
+    },
+    "mojito": {
+      "title": "Mojito",
+      "description": "Rum, menta, lime, sciroppo e soda"
+    },
+    "siesta": {
+      "title": "Siesta",
+      "description": "Tequila, Campari, pompelmo, lime e sciroppo"
+    },
+    "negroni": {
+      "title": "Negroni",
+      "description": "Gin, Campari e vermouth"
+    },
+    "daiquiri": {
+      "title": "Daiquiri",
+      "description": "Rum, lime e sciroppo"
+    },
+    "bloodyMary": {
+      "title": "Bloody Mary",
+      "description": "Vodka, succo di pomodoro e spezie"
+    },
+    "maiTai": {
+      "title": "Gin Fizz",
+      "description": "Gin, limone e soda"
+    },
+    "skinnyBitch": {
+      "title": "Skinny Bitch",
+      "description": "Vodka, limone e soda"
+    },
+    "ginAndTonic": {
+      "title": "Gin & Tonic",
+      "description": "Gin e tonica"
+    }
   },
   "footer": {
     "copy": "© 2025 Saće · Dorćol. Tutti i diritti riservati."
