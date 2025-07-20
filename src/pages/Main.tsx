@@ -45,7 +45,7 @@ export default function Main() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="bg-[#E6DDCE]/60 pointer-events-none" />
+        <div className="bg-overlay pointer-events-none" />
 
         <AnimatePresence mode="wait">
           <motion.div

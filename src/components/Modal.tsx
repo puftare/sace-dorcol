@@ -21,7 +21,7 @@ export default function Modal({ item, onClose }: Props) {
   }, [onClose]);
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#e6ddce]/90 px-4">
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-overlay-strong px-4">
       <div className="absolute inset-0" onClick={onClose} />
 
       <motion.div
@@ -29,7 +29,7 @@ export default function Modal({ item, onClose }: Props) {
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0, scale: 0.9 }}
         transition={{ duration: 0.2 }}
-        className="relative rounded-xl overflow-hidden max-w-lg w-full border-2 bg-[#e6ddce]"
+        className="relative rounded-xl overflow-hidden max-w-lg w-full border-2 bg-surface"
       >
         <div className="relative w-full h-64">
           <Image
