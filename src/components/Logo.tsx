@@ -9,7 +9,7 @@ export default function Logo() {
         width={400}
         height={225}
         priority
-        className="bg-[#E6DDCE]/60"
+        className="bg-overlay"
       />
     </div>
   );

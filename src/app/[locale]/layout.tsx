@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "../globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ThemeProvider from "@/components/ThemeProvider";
 import { navItems } from "@/constants/constants";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -55,9 +56,11 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale}>
       <body suppressHydrationWarning>
         <NextIntlClientProvider messages={messages}>
-          <Header items={navItems} />
-          {children}
-          <Footer />
+          <ThemeProvider>
+            <Header items={navItems} />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

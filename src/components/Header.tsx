@@ -4,6 +4,7 @@ import type { NavItem } from "@/types/types";
 import { usePathname } from "next/navigation";
 import { Link } from "@/i18n/routing";
 import LanguageSwitcher from "./LanguageSwitcher";
+import ThemeToggle from "./ThemeToggle";
 import { useTranslations } from "next-intl";
 
 interface HeaderProps {
@@ -35,7 +36,10 @@ export default function Header({ items }: HeaderProps) {
             );
           })}
         </div>
-        <LanguageSwitcher />
+        <div className="flex items-center space-x-4">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   );
